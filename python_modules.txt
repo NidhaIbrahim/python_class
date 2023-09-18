@@ -1,0 +1,75 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\nidha> python
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.name
+'nt'
+>>> os.getcwd
+<built-in function getcwd>
+>>> os.getcwd()
+'C:\\Users\\nidha'
+>>> os.mkdir("Test")
+>>> os.rmdir
+<built-in function rmdir>
+>>> os.rmdir("Test")
+>>> os.chdir("D:\\")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\'
+>>> os.chdir("d:\\")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'd:\\'
+>>> import sys
+>>> print(sys.path)
+['', 'C:\\Users\\nidha\\AppData\\Local\\Programs\\Python\\Python311\\python311.zip', 'C:\\Users\\nidha\\AppData\\Local\\Programs\\Python\\Python311\\DLLs', 'C:\\Users\\nidha\\AppData\\Local\\Programs\\Python\\Python311\\Lib', 'C:\\Users\\nidha\\AppData\\Local\\Programs\\Python\\Python311', 'C:\\Users\\nidha\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages']
+>>> print(sys.version)
+3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+>>> print(sys.maxsize)
+9223372036854775807
+>>> import math
+>>> print(math.pi)
+3.141592653589793
+>>> print(math.e)
+2.718281828459045
+>>> print(math.radians(30))
+0.5235987755982988
+>>> print(math.degrees(30))
+1718.8733853924696
+>>> print(math.sin(30))
+-0.9880316240928618
+>>> print(math.cos(0))
+1.0
+>>> print(math.sin(90))
+0.8939966636005579
+>>> math.pow(2,4)
+16.0
+>>> math.sqrt(100)
+10.0
+>>> math.ceil(20.9)
+21
+>>> math.floor(20.3)
+20
+>>> math.sin(30)
+-0.9880316240928618
+>>> math.pi
+3.141592653589793
+>>> math.h
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'math' has no attribute 'h'
+>>> sys.exot
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'sys' has no attribute 'exot'. Did you mean: 'exit'?
+>>> sys.exit()
+PS C:\Users\nidha> python
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+PS C:\Users\nidha>
